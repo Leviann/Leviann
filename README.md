@@ -1,114 +1,62 @@
 # Farid Ismailov
 
-**Senior QA Automation Engineer · SDET · AI Tooling**  
-Moscow, Russia · Remote · UTC+3
+**Applied AI Engineer / LLM Engineer · QA Automation Lead / Lead SDET**  
+Korolyov, Russia · Remote · UTC+3 · English C1
 
----
+I build LLM applications: agents with tools, memory and retrieval, assistants for engineering and management work, and desktop tools for audio and context. I have around **2 years of applied AI/LLM practice**, backed by **12+ years in QA and test automation**.
 
-## About
+My focus is turning an AI workflow into a system that can be used, tested and maintained: context and state, integrations, response quality, recovery after failures, and visibility into usage and cost.
 
-12+ years in QA, automation and SDET across enterprise, fintech and B2C/B2B products.  
-I'm a QA/SDET engineer who also builds production-grade AI infrastructure — not separate things, but the same engineering mindset applied to different layers.
+[Portfolio](https://prizmed.ru) · [Telegram](https://t.me/Leviann) · [Email](mailto:faridliners@gmail.com)
 
-Current focus: **Python automation · LLM/RAG/agent systems · AI tooling · CI/CD quality gates**
+## Applied AI work
 
----
+### LLM agents, memory and evaluation
 
-## What I build
+I develop and operate a personal R&D platform with **four AI bots sharing a Python runtime**. It brings together tool calling, MCP, conversation history, long-term memory, retrieval and multimodal inputs.
 
-### 🤖 [bots](https://github.com/Leviann/bots) — Self-hosted AI infrastructure
+- SQLite-backed conversation and memory storage, full-text search and retrieval experiments with Chroma and Neo4j/Graphiti.
+- Long-context handling with versioned summaries and source attribution.
+- Durable execution records, preserved tool results and partial responses, and recovery that avoids blindly repeating an operation with an unknown outcome.
+- Scenario-based evals and LLM-as-a-judge for response quality and memory retrieval, alongside tracking provider usage and cost.
 
-Production-grade multi-bot monorepo running on a personal VDS.
+### AI assistant for management work
 
-- **Multi-agent runtime** — 3 specialized agents sharing memory pipeline and LLM router
-- **RAG/CRAG pipeline** — ChromaDB + 3072-dim Gemini embeddings + Graphiti/Neo4j knowledge graph with fact-level contradiction detection
-- **Memory tiers** — HOT/WARM/COLD with TTL, SQLite conversation store, UUID session management
-- **Tool ecosystem** — Radarr/Sonarr, Deezer/Apple Music, Steam/RAWG wishlist, image/video gen, code execution, Home Assistant REST API, Frigate NVR, Google Tasks OAuth2
-- **Reliability** — Circuit breaker (half-open), LLM fallback chain (Gemini → OpenRouter/Grok → GigaChat), timeout handling, 84 unit tests
-- **Context engineering** — sandwich reminders, proxy-Halo context pressure monitor, tool loop detection, auto-compaction
-- **Stack** — Python 3.12, asyncio, aiogram, ChromaDB, Neo4j/Graphiti, SQLite, Docker Compose, Nginx, Linux/systemd
+I built an assistant to restore task context, track agreements, decisions and open questions, and prepare work summaries and meeting materials. I designed context storage, search, versioned state updates, links between conclusions and supporting evidence, and protection against concurrent changes. I use it in my QA leadership work.
 
----
+### AI developer tools and agent workflows
 
-### 🎵 [jazz-subtitles](https://github.com/Leviann/jazz-subtitles)
+I started building my own agent harness while working at Sber and continue to develop it across Linux, Windows and macOS. It includes reusable instructions, skills and MCP integrations, task decomposition, bounded workers, review, verification through real consumers, and continuity across long-running work.
 
-Yandex SpeechKit STT integration for real-time subtitle generation.
+I work with **Codex, Cursor, Claude Code and VS Code / GitHub Copilot**. At Sber, I also experimented with locally run models and IDE integration.
 
----
+In my current QA role, I created and handed over an AI-assisted mobile test development workflow: test case → plan → implementation → review → execution on a real device. I trained two engineers using actual team tasks. I also developed a separate corporate QA assistant pilot for requirements, merge requests, CI and meetings; that pilot is currently paused.
 
-### 🧪 [py-api](https://github.com/Leviann/py-api)
+### Audio and desktop applications
 
-Python API automation test suite.
+- **Screen Palette** — Rust/Tauri desktop AI assistant with audio and screen capture, local ASR using Nemotron/Sherpa ONNX, streaming LLM responses, context handling and MCP integration.
+- **Jazz Subtitles** — TypeScript Manifest V3 extension with a local FastAPI backend for recording work sessions and subsequent ASR, screen-text extraction and LLM summaries.
+- **Not So Super Whisper** — voice input for macOS and Windows using Swift/AppKit and C#/WPF, ASR APIs, insertion into the active field and local history.
 
----
-
-### 🚗 [tow_autolaunch](https://github.com/Leviann/tow_autolaunch)
-
-Autoclicker with computer vision model integration.
-
----
-
-### 🅿️ [parking](https://github.com/Leviann/parking)
-
-Selenium-based automation for parking slot reservation.
-
----
-
-### 🔧 [PowerShell](https://github.com/Leviann/PowerShell)
-
-Personal PowerShell scripting and system automation toolkit.
-
----
-
-### 🧩 [tampermonkey-personal](https://github.com/Leviann/tampermonkey-personal)
-
-Personal Tampermonkey scripts for browser automation.
-
----
-
-### 💻 [vscode-hassio-bridge](https://github.com/Leviann/vscode-hassio-bridge) *(private)*
-
-VSCode extension providing AI-assisted interface and bridge to Hassio-Bot API.
-
----
-
-## Commercial background
+## QA and engineering background
 
 | Period | Company | Role |
 |---|---|---|
-| 2020–2024 | **Sberbank** (rabota.sber.ru) | Senior QA Automation Engineer / SDET |
-| 2016–2020 | **Wiley** | Senior QA Engineer |
-| 2014–2016 | **Exactpro Systems** | QA Engineer |
+| Jun 2026–present | MEDIA-100 | QA Automation Lead |
+| Sep 2020–Apr 2026 | Sber | QA Lead / Lead SDET |
+| Nov 2016–Aug 2020 | Wiley | Senior QA Engineer |
+| Jul 2014–Nov 2016 | Exactpro Systems | QA Engineer |
 
-- Sberbank: B2C/B2B sports product, MVP → mature system, 17+ devs. QA infrastructure, backend/API/e2e automation, regression strategy, UAT/ПСИ, CI/CD quality gates, release criteria.
-- Wiley: education/publishing platform, UI/API automation, REST API, SQL, Jenkins/GitLab CI.
-- Exactpro: independent QA for financial markets, post-trade systems, FCA-regulated clients in 20+ countries.
+At Sber, I built QA processes and automation for a B2B/B2C product, developed a Python test framework and later moved it to Kotlin, and integrated execution and reporting into CI. Over the development of the automation programme, regression coverage grew from approximately 20% to 80%, and the overall regression cycle became about three times faster.
 
----
+My QA background spans API and UI automation, mobile testing, service integrations, SQL, release readiness, hiring and mentoring. It shapes how I build and evaluate AI systems today.
 
-## Stack
+## Working stack
 
-```
-QA / Automation    Python · Kotlin · Java · Selenium/Selenide · Playwright · Appium
-                   REST API · RestAssured · Postman · JUnit · TestNG · Allure
-                   JMeter · Yandex.Tank · SQL
+**AI / backend:** Python, asyncio, FastAPI, Pydantic, MCP, tool calling, structured outputs, RAG, retrieval, context engineering, evals, Gemini API, OpenAI-compatible APIs, OpenRouter.  
+**Data / delivery:** SQLite/FTS5, PostgreSQL, Chroma, Neo4j/Graphiti, Docker, Linux, Git, GitLab CI, Jenkins.  
+**QA / automation:** Python, Kotlin, Java, Playwright, Selenium, Appium, REST API, SQL, Allure.
 
-CI/CD / Infra      Docker · Docker Compose · Nginx · Linux · systemd · Bash · PowerShell
-                   Jenkins · GitLab CI · OpenShift · Git
+## По-русски
 
-Databases          PostgreSQL · MySQL · Oracle · MS SQL · SQLite · ChromaDB · Neo4j
-
-AI / LLM           Python 3.12 · asyncio · Gemini API · OpenRouter · GigaChat
-                   RAG/CRAG · ChromaDB · Neo4j/Graphiti · LLM tool calling
-                   Context engineering · Circuit breaker · Multi-agent runtime
-
-Other              Telethon · Home Assistant REST API · Radarr/Sonarr · Playwright MCP
-                   VSCode Extension API · Yandex SpeechKit · OAuth2
-```
-
----
-
-## Contact
-
-Telegram: [@Leviann](https://t.me/Leviann)  
-Email: faridliners@gmail.com
+Разрабатываю прикладные AI-системы: LLM-агентов, память и поиск, инструменты для разработки, аудио и рабочего контекста. Около двух лет AI/LLM-практики опираются на 12+ лет QA и автоматизации. Ищу задачи Applied AI / LLM Engineering; также открыт к QA Automation Lead / Lead SDET с инженерной работой и развитием автоматизации. Предпочитаю полностью удалённую работу из РФ.
