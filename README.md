@@ -30,6 +30,8 @@ I started building my own agent harness while working at Sber and continue to de
 
 I work with **Codex, Cursor, Claude Code and VS Code / GitHub Copilot**. At Sber, I also experimented with locally run models and IDE integration.
 
+My broader hands-on model experience includes **Gemma, DeepSeek, MiniMax and Qwen**. I experiment with local models through **LM Studio and Ollama**, and with **VS Code, MCP and multimodal workflows**.
+
 In my current QA role, I created and handed over an AI-assisted mobile test development workflow: test case → plan → implementation → review → execution on a real device. I trained two engineers using actual team tasks. I also developed a separate corporate QA assistant pilot for requirements, merge requests, CI and meetings; that pilot is currently paused.
 
 ### Audio and desktop applications
@@ -37,6 +39,10 @@ In my current QA role, I created and handed over an AI-assisted mobile test deve
 - **Screen Palette** — Rust/Tauri desktop AI assistant with audio and screen capture, local ASR using Nemotron/Sherpa ONNX, streaming LLM responses, context handling and MCP integration.
 - **Jazz Subtitles** — TypeScript Manifest V3 extension with a local FastAPI backend for recording work sessions and subsequent ASR, screen-text extraction and LLM summaries.
 - **Not So Super Whisper** — voice input for macOS and Windows using Swift/AppKit and C#/WPF, ASR APIs, insertion into the active field and local history.
+
+### Generative media and mobile client
+
+I build provider-backed image, video and audio workflows: Gemini-assisted prompt generation, integrations with Wan, Seedance, GPT Image and Gemini image generation, and audio/music bot workflows. I integrate Gemini TTS for speech synthesis and GPT Transcribe / MAI Transcribe for speech recognition. I also develop my own Android mobile client.
 
 ## QA and engineering background
 
