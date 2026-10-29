@@ -13,12 +13,13 @@ My focus is turning an AI workflow into a system that can be used, tested and ma
 
 ### LLM agents, memory and evaluation
 
-I develop and operate a personal R&D platform with **four AI bots sharing a Python runtime**. It brings together tool calling, MCP, conversation history, long-term memory, retrieval and multimodal inputs.
+I develop and operate **four personal AI assistants** for finding and analysing information, everyday tasks, media creation and voice conversations. Their shared Python runtime brings together tool calling, MCP, conversation history, long-term memory, retrieval and multimodal inputs.
 
 - SQLite-backed conversation and memory storage, full-text search and retrieval experiments with Chroma and Neo4j/Graphiti.
 - Long-context handling with versioned summaries and source attribution.
 - Durable execution records, preserved tool results and partial responses, and recovery that avoids blindly repeating an operation with an unknown outcome.
 - Scenario-based evals and LLM-as-a-judge for response quality and memory retrieval, alongside tracking provider usage and cost.
+- **BotsControl** — a web console that helps me monitor the four bots and diagnose issues by inspecting LLM requests, tool execution, memory and context, with a scheduler and operator workspace.
 
 ### AI assistant for management work
 
